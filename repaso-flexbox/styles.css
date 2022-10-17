@@ -1,0 +1,46 @@
+body {
+  background: beige;
+}
+
+.flex-container {
+  border: 1px solid black;
+  background: #ccc;
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.box {
+  border: 1px solid rgb(70, 70, 70);
+  background-color: white;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  margin: 5px;
+}
+
+.b1 {
+  background: lightblue;
+  order: 1;
+  flex-grow: 5;
+}
+
+.b2 {
+  background: lightcoral;
+  order: 3;
+  flex-grow: 2;
+}
+
+.b3 {
+  background: lightgreen;
+  order: 2;
+  flex-grow: 1;
+}
