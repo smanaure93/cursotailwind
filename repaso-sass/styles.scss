@@ -1,0 +1,30 @@
+// Variables
+$main-background: #ccc;
+$font-color: green;
+
+body {
+  background: $main-background;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: $font-color;
+}
+
+p {
+  color: $font-color;
+}
+
+.box {
+  background-color: #aaa;
+  border: 2px solid black;
+  padding: 10px;
+  color: black;
+  margin: 25px;
+  h2 {
+    text-decoration: underline;
+  }
+  p {
+    font-style: italic;
+  }
+}
