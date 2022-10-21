@@ -68,4 +68,13 @@
   .menu-item-a {
     @apply block transition duration-200 hover:text-custom-light-blue transform hover:scale-125;
   }
+
+  .banner {
+    @apply w-full h-28 border-8 border-white mx-auto overflow-hidden shadow m-5;
+  }
+
+  .banner-text {
+    @apply block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center bebas xs:text-2xl xs:mt-8;
+    text-shadow: 2px 2px 1px black;
+  }
 }
