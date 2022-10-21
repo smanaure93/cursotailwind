@@ -45,6 +45,22 @@
 }
 
 @layer components {
+  .logo-container {
+    @apply group w-64 mt-4 ml-6 pt-0.5 pb-0.5 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-custom-light-blue hover:text-black hover:bg-gray-200;
+  }
+
+  .logo-cog {
+    @apply symbol block float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-none;
+  }
+
+  .logo-text {
+    @apply block float-right text-4xl mt-1.5 mr-16 transition duration-100;
+  }
+
+  .menu-list {
+    @apply flex flex-row h-20 items-center justify-end text-2xl text-center mr-6;
+  }
+
   .menu-item {
     @apply mr-5 ml-5 tracking-wider flex-none;
   }
