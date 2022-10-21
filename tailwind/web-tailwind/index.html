@@ -7,16 +7,41 @@
     <title>Web con Tailwind CSS</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <h1
-      class="text-4xl bg-black text-white m-5 p-5 border-4 border-gray-300 rounded-full text-center"
-    >
-      Prueba con Tailwind CSS
-    </h1>
-    <ul>
-      <li>item</li>
-      <li>item</li>
-      <li>item</li>
-    </ul>
+  <body class="bg-body-pattern bg-scroll">
+    <!-- Header -->
+    <header id="header" class="h-20 bg-black text-white bebas">
+      <div class="container w-11/12 mx-auto flex flex-row">
+        <div id="logo" class="flex-1">
+          <div
+            class="w-64 mt-4 ml-6 pt-0.5 pb-0.5 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-custom-light-blue hover:text-black hover:bg-gray-200"
+          >
+            <span class="symbol block float-left text-3xl mt-1 ml-11">S</span>
+            <h3
+              class="block float-right text-4xl mt-1.5 mr-16 transition duration-100"
+            >
+              TAILWIND
+            </h3>
+          </div>
+        </div>
+
+        <nav class="flex-1">
+          <ul
+            class="flex flex-row h-20 items-center justify-end text-2xl text-center mr-6"
+          >
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">INICIO</a>
+            </li>
+            <li class="menu-item"><a href="#" class="menu-item-a">BLOG</a></li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">FORMACIÓN</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End of header -->
   </body>
 </html>
