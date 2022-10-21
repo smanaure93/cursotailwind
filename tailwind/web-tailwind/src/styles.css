@@ -58,11 +58,11 @@
   }
 
   .menu-list {
-    @apply flex flex-row h-20 items-center justify-end text-2xl text-center mr-6;
+    @apply flex flex-row h-20 items-center text-2xl text-center mr-6 xs:mr-0 xs:text-center xs:text-lg md:justify-end;
   }
 
   .menu-item {
-    @apply mr-5 ml-5 tracking-wider flex-none;
+    @apply mr-5 ml-5 tracking-wider flex-none xs:flex-1;
   }
 
   .menu-item-a {
