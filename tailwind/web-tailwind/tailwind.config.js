@@ -20,7 +20,10 @@ module.exports = {
                 "from-below": "fromBelow 500ms linear",
                 "from-right": "fromRight 500ms linear",
                 "bg-banner": "bgBanner 2s linear",
-                "text-banner": "trailerEffect 2s linear"
+                "text-banner": "trailerEffect 2s linear",
+                "card-icon": "cardIcon 300ms linear",
+                "card-category": "cardCategory 400ms linear",
+                "card-description": "cardDescription 400ms linear"
             },
             keyframes: {
                 fromBelow: {
@@ -42,6 +45,18 @@ module.exports = {
                     '50%': { transform: 'translateX(600%) scale(5,5)', opacity: 1 },
                     '75%': { transform: 'translateX(-600%) scale(5,5)', 'text-shadow': 'none', color: 'transparent', opacity: 0 },
                     '100%': { transform: 'translateX(0%) scale(1,1)', 'text-shadow': '2px 2 px 1px black', color: 'white', opacity: 1 },
+                },
+                cardIcon: {
+                    'from': { transform: 'translateY(-200%)' },
+                    'to': { transform: 'translateY(25%)' }
+                },
+                cardCategory: {
+                    'from': { transform: 'translateX(-200%)' },
+                    'to': { transform: 'translateX(0%)' }
+                },
+                cardDescription: {
+                    'from': { transform: 'translateY(200%)' },
+                    'to': { transform: 'translateY(0%)' }
                 }
             }
         },
@@ -49,5 +64,9 @@ module.exports = {
     variants: {
         animation: ['responsive', 'hover', 'group-hover'],
         animate: ['responsive', 'hover', 'group-hover'],
+        fontSize: ['responsive', 'hover', 'group-hover'],
+        transform: ['responsive', 'hover', 'group-hover'],
+        scale: ['responsive', 'hover', 'group-hover'],
+        padding: ['responsive', 'hover', 'group-hover'],
     }
 }

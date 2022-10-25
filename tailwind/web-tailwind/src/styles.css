@@ -77,4 +77,22 @@
     @apply block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center bebas xs:text-2xl xs:mt-8;
     text-shadow: 2px 2px 1px black;
   }
+
+  .card {
+    @apply group flex-1 h-80 border-2 border-gray-200 shadow-md bg-white overflow-hidden m-5 mt-10 pl-5 pr-5 cursor-pointer transition duration-300 hover:bg-black xs:hidden sm:hidden md:hidden lg:hidden xl:block;
+  }
+
+  .card-icon {
+    font-family: "WebSymbolsRegular";
+    @apply block w-full h-32 text-5xl text-center mt-12 mx-auto transition duration-300;
+  }
+
+  .card-category {
+    @apply w-full h-12 text-base font-bold text-center text-custom-dark-blue transition duration-300;
+  }
+
+  .card-description {
+    font-family: "TrebuchetMS";
+    @apply text-center text-custom-dark-blue text-sm transition duration-300;
+  }
 }
